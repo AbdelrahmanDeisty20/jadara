@@ -26,6 +26,9 @@
 
     <script>
         $(document).ready(function() {
+            // note: in browse you need to do this in console, localStorage.setItem("token", "your token");
+            // replace "your token" with your real token like: localStorage.setItem("token", "3|dWzxDFkpZ8k0DdoEO5S4hNB93PDxNEyyzoU2tefD2eb0846a");
+
             const token = localStorage.getItem('token');
 
             // التحقق من تسجيل الدخول
