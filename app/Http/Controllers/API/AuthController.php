@@ -14,6 +14,8 @@ use Illuminate\Support\Str;
 
 class AuthController extends Controller
 {
+
+    //note: in command line, use :php artisan queue:work
     //"Implement basic authentication "
     public function register(Request $request)
     {
@@ -94,8 +96,8 @@ class AuthController extends Controller
         //here get user by email
         $user = User::where('email', $request->email)->first();
         //if user is not found
-        if(!$user){
-            return response()->json(['message'=>'email not found']);
+        if (!$user) {
+            return response()->json(['message' => 'email not found']);
         }
         //if user is not verified
         if (!$user->is_verified) {
