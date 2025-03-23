@@ -62,7 +62,7 @@
                             <div id="post-${post.id}">
                                 <h3>${post.title}</h3>
                                 <p>${post.body}</p>
-                                <img src="${getImageUrl(post.image)}" alt="Post Image" style="max-width: 100%; height: auto;">
+                                <img src="${getImageUrl(post.image)}" alt="Post Image" style="max-width: 50%; height: auto;">
                                 <button type='submit' onclick="deletePost(${post.id})">Delete</button>
                                 <hr>
                             </div>
